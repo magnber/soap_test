@@ -33,11 +33,13 @@ namespace BanqSoft.Controllers
       iCloudCollectClient spn = new iCloudCollectClient(basicBinding, endpointAddress);
 
 
+
+      // legg til brukernavn/passord for api her
       spn.ClientCredentials.UserName.UserName = "";
       spn.ClientCredentials.UserName.Password = "";
 
       string x = "test";
-      // x = spn.PingAsync("ping", "", "", "000462").Result;
+      // Legg til brukernavn passord her kreditor her 
       x = spn.PingAsync("ping", "", "", "000462").Result;
       Console.WriteLine(spn);
 
