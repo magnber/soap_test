@@ -27,8 +27,8 @@ namespace BanqSoft.Controllers
       basicBinding.ReceiveTimeout = new TimeSpan(0, 20, 0);
 
 
-      // EndpointAddress endpointAddress = new EndpointAddress(new Uri("https://131109.web-site.no/CloudCollect/CloudCollect.svc"));
-      EndpointAddress endpointAddress = new EndpointAddress(new Uri("https://131109.web-site.no/CloudCollectTest/CloudCollect.svc?wsdl"));
+      EndpointAddress endpointAddress = new EndpointAddress(new Uri("https://131109.web-site.no/CloudCollect/CloudCollect.svc"));
+      // EndpointAddress endpointAddress = new EndpointAddress(new Uri("https://131109.web-site.no/CloudCollectTest/CloudCollect.svc?wsdl"));
 
       iCloudCollectClient spn = new iCloudCollectClient(basicBinding, endpointAddress);
 
